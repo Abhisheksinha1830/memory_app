@@ -2,6 +2,7 @@ import streamlit as st
 import base64
 
 # Custom CSS for Background Image
+@st.experimental_memo
 def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
