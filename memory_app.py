@@ -1,50 +1,30 @@
 import streamlit as st
 import base64
 
-# Custom CSS for Background Image
-@st.experimental_memo
+# Use @st.cache_data instead of @st.experimental_memo
+@st.cache_data
 def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-
+# Get the base64-encoded image
 img = get_img_as_base64("background.jpg")
 
+# Custom CSS for Background Image
 page_bg_img = f"""
 <style>
-# [data-testid="stAppViewContainer"] > .main {{
-# background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-# background-size: 180%;
-# background-position: top left;
-# background-repeat: no-repeat;
-# background-attachment: local;
-# }}
-
-[data-testid="stSidebar"] > div:first-child {{
-background-image: url("data:image/png;base64,{img}");
-background-position: center; 
-background-repeat: no-repeat;
-background-attachment: fixed;
+[data-testid="stAppViewContainer"] > .main {{
+    background-image: url("data:image/png;base64,{img}");
+    background-size: 180%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: local;
 }}
 </style>
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# st.markdown(
-#     """
-#     <style>
-#     .stApp {
-#         background-image: url("background.png");
-#         background-size: cover;
-#         background-position: center;
-#         background-repeat: no-repeat;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
 
 # Header Text
 st.markdown(
