@@ -9,7 +9,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 # Get the base64-encoded image
-img = get_img_as_base64("background.jpeg")
+img = get_img_as_base64("background.png")
 
 # Custom CSS for Background Image
 page_bg_img = f"""
