@@ -13,7 +13,7 @@ def get_img_as_base64(file):
         return None
 
 # Get the absolute path to the image
-file_path = "file:///Users/abhisheksinha/Desktop/Ven/surprise/background.jpeg"
+file_path = "https://images.unsplash.com/photo-1501426026826-31c667bdf23d"
 print(f"Checking if file exists at: {file_path}")
 if not os.path.exists(file_path):
     st.error(f"File not found at {file_path}. Check the path or file name.")
