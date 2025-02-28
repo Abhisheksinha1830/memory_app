@@ -1,19 +1,19 @@
 import streamlit as st
 
-# Custom CSS for Background Image
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url("background.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# # Custom CSS for Background Image
+# st.markdown(
+#     """
+#     <style>
+#     .stApp {
+#         background-image: url("background.jpeg");
+#         background-size: cover;
+#         background-position: center;
+#         background-repeat: no-repeat;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 # Header Text
 st.markdown(
