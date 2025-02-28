@@ -1,13 +1,12 @@
 import streamlit as st
-from PIL import image
+from PIL import Image  # Changed 'image' to 'Image'
 
 img = Image.open("background.jpeg")
 
 st.image(
-
-    img, caption = "start",
-    width = 800,
-    channels = "RGB"
+    img, caption="start",
+    width=800,
+    channels="RGB"
 )
 
 # Header Text
