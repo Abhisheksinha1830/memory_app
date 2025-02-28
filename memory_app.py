@@ -5,7 +5,7 @@ img = Image.open("background.jpeg")
 
 st.image(
 
-    img, caption = "start"
+    img, caption = "start",
     width = 800,
     channels = "RGB"
 )
