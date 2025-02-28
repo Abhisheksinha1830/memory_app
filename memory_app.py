@@ -5,7 +5,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("background.jpeg");
+        background-image: url("background.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -17,6 +17,6 @@ st.markdown(
 
 # Header Text
 st.markdown(
-    "<h1 style='text-align: center; color: pink;'>Memory App</h1>", 
+    "<h1 style='text-align: center; color: yellow; font-size: 36px; font-weight: bold;'>Memory App</h1>", 
     unsafe_allow_html=True
 )
