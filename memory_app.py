@@ -23,7 +23,7 @@ img4 = Image.open("special_photo.jpeg")
 import streamlit as st
 
 st.title("I'm Sorry, Ven 💖")
-st.write("I'm so sorry for talking rudely. Anwer few question and there's a surprise for you!")
+st.write("I'm so sorry for talking rudely. Answer few question and there's a surprise for you!")
 
 # Initialize session state
 if "quiz_step" not in st.session_state:
@@ -85,6 +85,10 @@ elif st.session_state.quiz_step == 2:
     if st.button("Submit Answer"):
         if q3_answer == "Plan a special date":
             st.success("Yes! This trip I PROMISE I’ll plan something special to show you how much you mean to me.")
+        if q3_answer == "Forget about it":
+            st.success("No babe, I am sorry.")
+        if q3_answer == "Argue more":
+            st.success("Wrong Option baby")                        
         st.session_state.quiz_step += 1
     if st.button("Back"):
         st.session_state.quiz_step = 1  # Reset to the first question
