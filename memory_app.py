@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image  # Changed 'image' to 'Image'
 
 img1 = Image.open("sad_puppy.jpg")
-img2 = Image.open("heart.jpg")
+img2 = Image.open("heart.jpeg")
 img3 = Image.open("flowers.jpg")
 img4 = Image.open("special_photo.jpeg")
 
