@@ -22,7 +22,7 @@ img4 = Image.open("special_photo.jpeg")
 
 import streamlit as st
 
-st.title("I'm Sorry, Ven 💖")
+st.title("I'm Sorry, My Ven 💖")
 st.write("I'm so sorry for talking rudely. Answer few question and there's a surprise for you!")
 
 # Initialize session state
